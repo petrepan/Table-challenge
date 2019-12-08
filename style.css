@@ -97,9 +97,7 @@ nav a {
         padding-top: 38px;
         padding-bottom: 15px;
         font-weight: lighter;
-    }
-
-   
+    } 
 
     td::before {
         position: absolute;
@@ -107,16 +105,31 @@ nav a {
         white-space: nowrap;  
         margin-top: 40px;
     }
-
-    td:nth-of-type(1)::before,
-    td:nth-of-type(2)::before,
-    td:nth-of-type(3)::before,
-    td:nth-of-type(4)::before {
+    
+   td:nth-of-type(1)::before {
         content: "💰 Coin";
         text-transform: capitalize;
         font-weight: bolder;   
     }
 
+    td:nth-of-type(2)::before {
+        content: "📄 Code";
+        text-transform: capitalize;
+        font-weight: bolder;   
+    }
+
+    td:nth-of-type(3)::before {
+        content: "🤑 Price";
+        text-transform: capitalize;
+        font-weight: bolder;   
+    }
+
+    td:nth-of-type(4)::before {
+        content: "📉 Total Supply";
+        text-transform: capitalize;
+        font-weight: bolder;   
+    }
+    
     nav {
         padding: 1.5rem;
     }
